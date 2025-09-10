@@ -28,6 +28,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -151,4 +152,14 @@ footer {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border-radius: 9999px;
+}
+
+@media (max-width: 700px){
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assests/bg-desktop-light.jpg);
+  }
 }
